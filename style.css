@@ -73,8 +73,24 @@ input {
     max-width: 100vh;
     width: 50%;
 }
-@media only screen and (max-width: 600px) {
+.mobile {
+    display: none;
+}
+@media only screen and (max-width: 425px) {
  .desktop {
-    
+    display: none;
  }
+.mobile {
+    display: block;
+    text-align: center;
+}
+.logo {
+    padding: 0px;
+}
+.hero {
+    min-width: 100vw;
+}
+h1 {
+    margin: 20px auto;
+}
 }
