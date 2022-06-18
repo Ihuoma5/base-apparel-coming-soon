@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --lin1: hsl(0, 0%, 100%);
+    --lin2: hsl(0, 100%, 98%);
+    --lin3: hsl(0, 80%, 86%);
+    --lin4: hsl(0, 74%, 74%);
+}
+*{
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+}
+.card {
+    background-color: var(--lin2);
+    padding: 80px 140px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    color: var(--desaturated-red);
+}
+
+.logo {
+    margin-bottom: 80px;
+}
+h1 {
+color: var(--dark-grayish-red);
+font-weight: 700;
+font-size: 40px;
+text-transform: uppercase;
+letter-spacing: 5px;
+width: 200px;
+}
+p {
+    width: 450px;
+    margin: 20px 0;
+}
+span {
+    color: var(--desaturated-red);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+input {
+    width: 350px;
+    border: 1px solid var(--desaturated-red);
+    padding: 17px;
+    border-radius: 50px;
+    color: var(--desaturated-red);
+}
+
+.btn {
+    padding: 18px;
+    border-radius: 50px;
+    width: 90px;
+    border: none;
+    background-image: linear-gradient(to right, var(--lin4), var(--soft-red));
+    margin: -70px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, var(--lin3), var(--lin4));
+}
+#error{
+  color: var(--soft-red);  
+}
+.desktop {
+    max-width: 100vh;
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+ .desktop {
+    
+ }
+}
